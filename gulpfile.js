@@ -5,10 +5,10 @@ var reload = browserSync.reload;
 gulp.task("serve", function () {
   browserSync.init({
     server: {
-      baseDir: "app",
+      baseDir: "src",
     },
   });
 });
 
-gulp.watch("app/*.html").on("change", reload);
-gulp.watch("app/*.js").on("change", reload);
+gulp.watch("src/*.html").on("change", reload);
+gulp.watch("src/*.js").on("change", reload);
